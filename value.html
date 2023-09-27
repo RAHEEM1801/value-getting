@@ -1,0 +1,40 @@
+<html>
+    <head>
+
+    </head>
+    <body>
+        <h1 id="mystyle">abdul raheem</h1>
+        <button onclick="val()">change</button><br><br>
+
+        
+            <input type="text" placeholder="insert-name" id="box">
+            <button onclick="fo()">inp</button>
+
+       
+       <h2 id="prin">add</h2>
+
+       <h3 id="cl"></h3>
+       <input type="text" placeholder="color" id="l">
+       <button onclick="col()">clr-ch</button>
+        <script> 
+        function val(){
+
+            var a=document.getElementById("mystyle")
+            a.innerHTML="raheem bhai"
+        }
+          
+        function fo(){
+           var c=document.getElementById("box").value;
+           var print=document.getElementById("prin");
+
+           print.innerHTML=c
+        }
+        function col(){
+            var ab=document.getElementById("l").value;
+            // var cll=document.getElementById("cl");
+            document.body.style.backgroundColor=ab;
+
+        }
+        </script>
+    </body>
+    </html>
